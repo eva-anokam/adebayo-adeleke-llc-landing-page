@@ -6,7 +6,7 @@ Custom properties
 :root {
   --clr-primary: #0f172a;
   --clr-secondary: #222c42;
-  --clr-accent: #9333ea;
+  --clr-accent: #751ec7;
   --clr-white-body: #e2e1e4;
   --clr-white-heading: #ebe6fa;
 
@@ -156,10 +156,19 @@ Utility classes
   margin: 0 auto;
 }
 .title__text {
-  color: var(--clr-accent);
+  color: var(--clr-white-body);
   font-weight: var(--fw-bold);
 }
-
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
 
 /* 
 ---------------------
@@ -174,6 +183,7 @@ Header
 }
 .header__logo img {
   width: 5rem;
+  height: auto;
 }
 .header__nav {
   display: none;
@@ -330,6 +340,7 @@ Hero
 }
 .hero-img-container {
   width: 100%;
+  height: auto;
 }
 @media (min-width: 760px) {
   .hero-btn-container {
