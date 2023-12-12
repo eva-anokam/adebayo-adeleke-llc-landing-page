@@ -37,3 +37,7 @@ sections.forEach(section => {
     observer.observe(section);
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const video = document.querySelector(".hero-video");
+    video.play();
+});
