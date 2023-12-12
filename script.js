@@ -39,5 +39,12 @@ sections.forEach(section => {
 
 document.addEventListener("DOMContentLoaded", function () {
     const video = document.querySelector(".hero-video");
-    video.play();
+    const playButton = document.querySelector(".play-button");
+    video.style.opacity = ".5"
+    playButton.addEventListener("click", function () {
+        playButton.style.display = "none"; // Hide the play button
+        video.style.opacity = "1"
+        video.play();
+    });
 });
+

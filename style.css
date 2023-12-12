@@ -748,7 +748,18 @@ footer {
     opacity: 0;
     transition: opacity 1s ease-out; 
 }
-
 .fade-in {
     opacity: 1;
+}
+.hero-img-container{
+    position: relative;
+}
+.play-button{
+    background-color: var(--clr-accent);
+    padding: .5rem;
+    width: 15%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
