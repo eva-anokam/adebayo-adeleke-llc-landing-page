@@ -251,6 +251,7 @@ Header
 }
 .header-btn-container a:last-child {
   background-color: var(--clr-accent);
+  font-size: 1rem;
 }
 
 @media (min-width: 760px) {
